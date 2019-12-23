@@ -1,3 +1,10 @@
+# Smart Clock
+## Features
+  * Local Time (From System)
+  * Location Based Weather
+  * Internet Radio
+
+## Electron
 # electron-quick-start
 
 **Clone and run for a quick way to see Electron in action.**
