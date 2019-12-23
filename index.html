@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>I'm Smart and a Clock. I'm a smart clock.</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <div class="topDisplay">
+      <div class="dropdown">
+        <button class="dropbtn">Radio Stations</button>
+        <div class="dropdown-content">
+          <button onClick="showRadio('jock987')" 
+                  id="jock987btn">Jock 98.7</button>
+          <button onClick="showRadio('ksmu')"
+                  id="ksmubtn">KSMU</button>
+          <button onClick="showRadio('bbcWorldNews')"
+                  id="bbcWorldNewsbtn">BBC World News</button>
+          <button onClick="showRadio('michiganRadio')"
+                  id="michiganRadiobtn">Michigan Radio</button>
+          <button onClick="showRadio('hiddenBrain')"
+                  id="hiddenBrainbtn">Hidden Brain</button>
+        </div> <!-- Dropdown content -->
+      </div> <!-- Dropdown -->       
+      <a href="alarm.html">
+        <button class="alarmButton">Alarm</button>
+      </a> 
+    </div> <!-- topDisplay -->
+    <div class="horizontalContainer">
+      <div class="leftDisplay">
+        <script src="./radio.js"></script>
+        <div id="radioContainer"
+             class="radioContainer">
+          <iframe src="https://tunein.com/embed/player/s69133/" 
+                  class="radio" 
+                  scrolling="no" 
+                  id="jock987"
+                  frameborder="no"></iframe> 
+          <iframe src="https://tunein.com/embed/player/s35413/" 
+                  class="radio" 
+                  scrolling="no" 
+                  id="ksmu"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/s24948/" 
+                  class="radio" 
+                  scrolling="no" 
+                  id="bbcWorldNews"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/s23407/" 
+                  class="radio" 
+                  scrolling="no" 
+                  id="michiganRadio"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/p787503/" 
+                  class="radio" 
+                  scrolling="no" 
+                  id="hiddenBrain"
+                  frameborder="no"></iframe>
+        </div> <!-- radioContainer -->
+      </div> <!-- leftDisplay -->
+      <div class="middleDisplay">
+        <div class="container">
+          <div class="topContainer">
+            <div class="time" id="digital-time"></div>
+          </div> <!-- topContainer -->
+          <div class="weather" id="weather"></div>
+        </div> <!-- container -->
+      </div> <!-- middleDisplay -->
+      <div class="rightDisplay">
+      </div>
+    </div> <!-- horizontalContainer -->
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
