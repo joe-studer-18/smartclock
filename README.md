@@ -1,9 +1,14 @@
 # Smart Clock
 ## Features
   * Local Time (From System)
-  * Location Based Weather
+  * Weather (Hardcoded for now)
   * Internet Radio
-
+  * Calendar
+## Running
+'''
+  chmod +x ./startClock.sh
+  ./startClock.sh
+'''
 ## Electron
 # electron-quick-start
 
