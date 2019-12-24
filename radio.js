@@ -1,5 +1,14 @@
 var openRadio = 0;
 
+function showOptions() {
+  var display = 'none';
+  console.log('found it');
+  if (this.document.getElementById('dropdown-content-div').style.display == 'none') {
+    display = 'block';
+  }
+  this.document.getElementById('dropdown-content-div').style.display = display;
+}
+
 function _setOpen(arg_id) {
   if (openRadio == 0) {
     openRadio = arg_id;
