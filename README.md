@@ -5,10 +5,10 @@
   * Internet Radio
   * Calendar
 ## Running
-'''
+```
   chmod +x ./startClock.sh
   ./startClock.sh
-'''
+```
 ## Electron
 # electron-quick-start
 
