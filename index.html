@@ -20,11 +20,22 @@
                   id="michiganRadiobtn">Michigan Radio</button>
           <button onClick="showRadio('hiddenBrain')"
                   id="hiddenBrainbtn">Hidden Brain</button>
+          <button onClick="showRadio('howIBuiltThis')"
+                  id="howIBuiltThisbtn">How I Built This</button>
+          <button onClick="showRadio('mastersOfScale')"
+                  id="mastersOfScalebtn">Masters of Scale</button>
+          <button onClick="showRadio('planetMoney')"
+                  id="planetMoneybtn">Planet Money</button>
+          <button onClick="showRadio('freakonomics')"
+                  id="freakonomicsbtn">Freakonomics</button>
         </div> <!-- Dropdown content -->
       </div> <!-- Dropdown -->       
       <a href="alarm.html">
-        <button class="alarmButton">Alarm</button>
+        <button class="topButton">Alarm</button>
       </a> 
+      <a href="calendar.html">
+        <button class="topButton">Calendar</button>
+      </a>
     </div> <!-- topDisplay -->
     <div class="horizontalContainer">
       <div class="leftDisplay">
@@ -56,6 +67,26 @@
                   scrolling="no" 
                   id="hiddenBrain"
                   frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/p910896/" 
+                  class="radio"
+                  scrolling="no" 
+                  id="howIBuiltThis"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/p987822/" 
+                  scrolling="no"
+                  class="radio"
+                  id="mastersOfScale"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/p164680/"
+                  scrolling="no"
+                  class="radio"
+                  id="planetMoney"
+                  frameborder="no"></iframe>
+          <iframe src="https://tunein.com/embed/player/p272293/" 
+                  scrolling="no" 
+                  class="radio"
+                  id="freakonomics"
+                  frameborder="no"></iframe>
         </div> <!-- radioContainer -->
       </div> <!-- leftDisplay -->
       <div class="middleDisplay">
@@ -69,7 +100,6 @@
       <div class="rightDisplay">
       </div>
     </div> <!-- horizontalContainer -->
-    <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
   </body>
 </html>

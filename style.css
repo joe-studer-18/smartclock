@@ -8,7 +8,7 @@ button {
   height: 7vw;
 }
 
-.alarmButton {
+.topButton {
   border-radius: 25px;
   background-color: darkgray;
   border: none;
@@ -95,10 +95,13 @@ button {
 }
 
 .radio {
-  height: 100%;
   display: none;
-  width: 20vw;
+  height: 25vh;
+  width: 98vw;
   float: left;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
 }
 
 .container {
