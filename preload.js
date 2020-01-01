@@ -24,14 +24,15 @@ window.addEventListener('DOMContentLoaded', () => {
     let today = new Date();
     let aOrP = today.getHours() / 12 < 1 ? "a" : "p";
     let h = today.getHours() % 12;
+    if (h == 0) {h = 12};
     let m = today.getMinutes();
     m = checkTime(m);
     document.getElementById('digital-time').innerHTML = h + ":" + m + aOrP;
     let t = setTimeout(startTime, WAIT_TIME);
   }
   
-  function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
+  function checkTime(m) {
+    if (m < 10) {m = "0" + m};  // add zero in front of numbers < 10
+    return m;
   }
 })

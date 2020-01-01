@@ -11,27 +11,27 @@
         <button onClick="showOptions()"
                 class="dropbtn">Radio Stations</button>
         <div class="leftOption">
-        <div class="dropdown-content"
-             id="dropdown-content-div">
-          <button onClick="showRadio('jock987')" 
-                  id="jock987btn">Jock 98.7</button>
-          <button onClick="showRadio('ksmu')"
-                  id="ksmubtn">KSMU</button>
-          <button onClick="showRadio('bbcWorldNews')"
-                  id="bbcWorldNewsbtn">BBC World News</button>
-          <button onClick="showRadio('michiganRadio')"
-                  id="michiganRadiobtn">Michigan Radio</button>
-          <button onClick="showRadio('hiddenBrain')"
-                  id="hiddenBrainbtn">Hidden Brain</button>
-          <button onClick="showRadio('howIBuiltThis')"
-                  id="howIBuiltThisbtn">How I Built This</button>
-          <button onClick="showRadio('mastersOfScale')"
-                  id="mastersOfScalebtn">Masters of Scale</button>
-          <button onClick="showRadio('planetMoney')"
-                  id="planetMoneybtn">Planet Money</button>
-          <button onClick="showRadio('freakonomics')"
-                  id="freakonomicsbtn">Freakonomics</button>
-        </div> <!-- Dropdown content -->
+          <div class="dropdown-content"
+               id="dropdown-content-div">
+            <button onClick="showRadio('jock987')" 
+                    id="jock987btn">Jock 98.7</button>
+            <button onClick="showRadio('ksmu')"
+                    id="ksmubtn">KSMU</button>
+            <button onClick="showRadio('bbcWorldNews')"
+                    id="bbcWorldNewsbtn">BBC World News</button>
+            <button onClick="showRadio('michiganRadio')"
+                    id="michiganRadiobtn">Michigan Radio</button>
+            <button onClick="showRadio('hiddenBrain')"
+                    id="hiddenBrainbtn">Hidden Brain</button>
+            <button onClick="showRadio('howIBuiltThis')"
+                    id="howIBuiltThisbtn">How I Built This</button>
+            <button onClick="showRadio('mastersOfScale')"
+                    id="mastersOfScalebtn">Masters of Scale</button>
+            <button onClick="showRadio('planetMoney')"
+                    id="planetMoneybtn">Planet Money</button>
+            <button onClick="showRadio('freakonomics')"
+                    id="freakonomicsbtn">Freakonomics</button>
+          </div> <!-- Dropdown content -->
         </div>
       </div> <!-- Dropdown -->       
       <a href="alarm.html">
@@ -43,10 +43,13 @@
     </div> <!-- topDisplay -->
     <div class="horizontalContainer">
       <div class="leftDisplay">
-        <script src="./radio.js"></script>
         <div id="radioContainer"
              class="radioContainer">
-          <iframe src="https://tunein.com/embed/player/s69133/" 
+          <button id="radioSizeButton"
+                  class="radioSizeButton"
+                  onClick="sizeRadio()">^</button>
+         <script src="./radio.js"></script>
+         <iframe src="https://tunein.com/embed/player/s69133/" 
                   class="radio" 
                   scrolling="no" 
                   id="jock987"

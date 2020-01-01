@@ -98,6 +98,12 @@ button {
   right: 5px;
 }
 
+.radioSizeButton {
+  display: none;
+  height: 1vh;
+  width: 50px;
+}
+
 .radio {
   display: none;
   height: 25vh;
