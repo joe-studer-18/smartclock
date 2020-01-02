@@ -40,8 +40,8 @@ function sizeRadio() {
   var size = '25vh';
   var displayCharacter = "^";
   var radios = this.document.getElementsByClassName('radio');
-  if (radios[0].style.height != '92vh') {
-    size = '92vh';
+  if (radios[0].style.height != '87vh') {
+    size = '87vh';
     displayCharacter = "v";
   }
   for(i = 0; i < radios.length; i++) {
