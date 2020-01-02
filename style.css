@@ -5,7 +5,7 @@ body {
 
 button {
   width: 20vw;
-  height: 7vh;
+  height: 9.7vh;
 }
 
 .topButton {
@@ -40,7 +40,7 @@ button {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 7vh;
+  top: 9.7vh;
   left: 0px;
   background-color: #f1f1f1;
   min-width: 160px;
@@ -54,12 +54,6 @@ button {
   text-decoration: none;
   display: block;
 }
-
-/**
-.dropdown:focus .dropdown-content {display: block;}
-
-.dropdown:focus .dropbtn {background-color: #3e8e41;}
-*/
 
 .time {
   font-size: 25vw;
@@ -100,7 +94,7 @@ button {
 
 .radioSizeButton {
   display: none;
-  height: 1vh;
+  height: 1.3vh;
   width: 50px;
 }
 

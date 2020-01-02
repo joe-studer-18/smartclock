@@ -36,3 +36,5 @@ window.addEventListener('DOMContentLoaded', () => {
     return m;
   }
 })
+
+BrowserWindow.setFullScreen(true);
