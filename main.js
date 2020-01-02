@@ -11,14 +11,15 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    fullscreen: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
-
+  mainWindow.maximize();
   globalShortcut.register('CommandOrControl+R', function() {
-        console.log('CommandOrControl+R is pressed')
-        mainWindow.reload()
+        console.log('CommandOrControl+R is pressed');
+        mainWindow.reload();
   })
 
   // and load the index.html of the app.
