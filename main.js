@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, globalShortcut, BrowserWindow} = require('electron')
+const {app, BrowserWindow, globalShortcut, shell} = require('electron')
 const path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -16,6 +16,7 @@ function createWindow () {
       preload: path.join(__dirname, 'preload.js')
     }
   })
+
   mainWindow.maximize();
   globalShortcut.register('CommandOrControl+R', function() {
         console.log('CommandOrControl+R is pressed');
@@ -32,6 +33,10 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  mainWindow.webContents.on("new-window", function(event, url) {
+    event.preventDefault();
+  });
 }
 
 // This method will be called when Electron has finished
