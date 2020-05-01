@@ -34,6 +34,14 @@ function showRadio(arg_id) {
     this.document.getElementById(arg_id+'btn').style.color = 'blue';  
   }
   this.document.getElementById('radioSizeButton').style.display = display;
+  this.document.getElementById('radioResetButton').style.display = display;
+}
+
+function resetRadio() {
+  if (openRadio != 0) {
+    var currentRadio = this.document.getElementById(openRadio);
+    currentRadio.src = currentRadio.src;
+  }
 }
 
 function sizeRadio() {

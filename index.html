@@ -5,7 +5,7 @@
     <title>I'm Smart and a Clock. I'm a smart clock.</title>
   </head>
   <body>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <div class="topDisplay">
       <div class="dropdown">
         <button onClick="showOptions()"
@@ -31,7 +31,7 @@
                     id="planetMoneybtn">Planet Money</button>
             <button onClick="showRadio('freakonomics')"
                     id="freakonomicsbtn">Freakonomics</button>
-          </div> <!-- Dropdown content -->
+         </div> <!-- Dropdown content -->
         </div>
       </div> <!-- Dropdown -->       
       <a href="alarm.html">
@@ -45,9 +45,15 @@
       <div class="leftDisplay">
         <div id="radioContainer"
              class="radioContainer">
-          <button id="radioSizeButton"
-                  class="radioSizeButton"
-                  onClick="sizeRadio()">^</button>
+          <div id="radioControlPanel"
+               class="horizontalContainer">
+            <button id="radioSizeButton"
+                    class="radioSizeButton"
+                    onClick="sizeRadio()">^</button>
+            <button id="radioResetButton"
+                    class="radioSizeButton"
+                    onClick="resetRadio()">Reset</button>
+          </div>
          <script src="./radio.js"></script>
          <iframe src="https://tunein.com/embed/player/s69133/" 
                   class="radio" 
